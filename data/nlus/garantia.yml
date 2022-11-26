@@ -11,6 +11,7 @@ nlu:
     - eu nao tenho garantia
     - sem garantia
     - fora da garantia
+    - nao possuo garantia
 - synonym: nao_funciona
   examples: |
     - não funciona
@@ -22,12 +23,15 @@ nlu:
     - ta quebrado
     - ta com defeito
     - falha
+    - quebrou
 - synonym: funciona
   examples: |
     - está funcionando
     - liga
 - intent: pergunta
   examples: | 
+    - quanto tempo um produto tem de [garantia]{"entity":"garantia","value":"tempo"}?
+    - a minha [tv](produto) (quebrou){"entity":"funciona","value":"nao_funciona"}, o que posso fazer?
     - tenho uma [tv](produto) [fora da garantia](garantia)
     - o meu [computador](produto) [nao funciona](funciona) e [ja passou da garantia](garantia)
     - o meu [computador](produto) [não está funcionado](funciona) e já [passou da garantia](garantia), ainda tenho algum direito?

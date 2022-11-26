@@ -11,6 +11,8 @@ responses:
   - text: "O fornecedor deve responder por defeitos de fabricação mesmo fora do período de garantia (parágrafo 3º do artigo 26 do CDC)"
   utter_garantia_nao_e_defeito_de_fabrica:
   - text: "Neste caso o fornecedor não possuí responsabilidade após a garantia"
+  utter_garantia_possiblidade_garantia:
+  - text: "Caso o produto que você comprou é um produto durável (tv,celular) e o produto possui menos de 90 dias após a compra então você possui garantia, para caso tenha..."
   utter_garantia_defeito_de_fabrica:
   - text: "O Defeito seria de fábrica?"
     buttons: 
@@ -18,5 +20,13 @@ responses:
       payload: "/afirmacao"
     - title: "Não"
       payload: "/negacao"
+    - title: "Eu não sei"
+      payload: "/desconhece"
   utter_garantia_generico:
-  - text: O fornecedor deve responder por defeitos de fabricação mesmo fora do período de garantia.\nDe acordo com o Código do Consumidor, os fornecedores respondem pelos defeitos de qualidade que tornem produtos impróprios ao consumo ou diminuam seu valor.\nQuando se tratam de problemas aparentes, em serviços ou produtos não duráveis, o consumidor tem até 30 dias para fazer sua reclamação, enquanto que, no caso dos produtos duráveis, o prazo é de até 90 dias. \nMas, com relação aos problemas \“ocultos\”, que podem levar anos para se manifestar, a lei esclarece que o consumidor tem direito à reparação da falha oculta até 5 anos do produto, começando a contagem do prazo a partir do momento em que o defeito de fabricação foi notado.
+  - text: O fornecedor deve responder por defeitos de fabricação mesmo fora do período de garantia.De acordo com o CDC, os fornecedores respondem pelos defeitos de qualidade que tornem produtos impróprios ao consumo ou diminuam seu valor.Quando se tratam de problemas aparentes, em serviços ou produtos não duráveis, o consumidor tem até 30 dias para fazer sua reclamação, enquanto que, no caso dos produtos duráveis, o prazo é de até 90 dias.Mas, com relação aos problemas “ocultos”, que podem levar anos para se manifestar, a lei esclarece que o consumidor tem direito à reparação da falha oculta até 5 anos do produto, começando a contagem do prazo a partir do momento em que o defeito de fabricação foi notado.
+  utter_garantia_tempo_variado:
+  - text: A garantia legal é estabelecida independente da previsão em contrato
+  utter_garantia_tempo_duravel:
+  - text: Produtos duráveis(TV,geladeira,guarda roupa etc...) possuem garantia de 90 dias.
+  utter_garantia_tempo_consumivel:
+  - text: Produtos não duráveis(alimentos por exemplo) possuem garantia de 30 dias.

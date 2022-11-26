@@ -26,3 +26,21 @@ stories:
   - action: utter_garantia_defeito_de_fabrica
   - intent: negacao
   - action: utter_garantia_nao_e_defeito_de_fabrica
+- story: o usuário desconhece se o produto possuí garantia.
+  steps:
+  - intent: pergunta
+    entities:
+    - funciona: "nao_funciona"
+    - garantia: "expirada"
+  - action: utter_garantia_defeito_de_fabrica
+  - intent: desconhece
+  - action: utter_garantia_possiblidade_garantia
+  - action: utter_garantia_expirada
+- story: tempo de garantia perguntado
+  steps:
+  - intent: pergunta
+    entities:
+    - garantia: "tempo"
+  - action: utter_garantia_tempo_variado
+  - action: utter_garantia_tempo_duravel
+  - action: utter_garantia_tempo_consumivel

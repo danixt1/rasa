@@ -27,3 +27,8 @@ nlu:
   examples: |
     - o que é [cdc]{"entity":"geral","value":"CDC"}?
     - o que significa [CDC](geral)?
+- intent: desconhece
+  examples: |
+    - não sei
+    - não tenho a menor ideia
+    - n sei

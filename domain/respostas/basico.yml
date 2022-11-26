@@ -15,6 +15,8 @@ responses:
       payload: 'direitos referente a garantia'
     - title: "Nova nota fiscal"
       payload: 'perdi a nota fiscal o que fazer?'
+    - title: "tempo de garantia"
+      payload: 'quanto tempo tenho de garantia?'
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
