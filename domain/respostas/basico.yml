@@ -1,0 +1,20 @@
+version: "3.1"
+
+responses:
+  utter_saudacao:
+  - text: "Olá sou um bot para lhe auxiliar sobre os seus direitos como comsumidor, qual é a sua pergunta?"
+  - text: "qual seria a sua dúvida?"
+  utter_default:
+  - text: "Eu não entendi o que você disse, você poderia repetir"
+  utter_geral_cdc:
+  - text: "CDC É uma abreviação para Código do consumidor"
+  utter_inicio:
+  - text: "Olá estou aqui para poder lhe auxiliar com as leis de CDC, qual é a sua pergunta?"
+    buttons: 
+    - title: "sobre garantia"
+      payload: 'direitos referente a garantia'
+    - title: "Nova nota fiscal"
+      payload: 'perdi a nota fiscal o que fazer?'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

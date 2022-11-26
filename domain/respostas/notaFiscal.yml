@@ -1,0 +1,4 @@
+version: "3.1"
+responses:
+  utter_nota_fiscal:
+  - text: Você pode solicitar a segunda via ao estabelecimento onde foi feita a compra ou ao prestador de serviço. Essa nova nota deve conter as mesmas informações que tinham no documento perdido.

@@ -1,0 +1,29 @@
+version: "3.1"
+#alguns elementos básicos
+nlu:
+- intent: saudacao
+  examples: |
+    - ola
+    - olá eu me chamo [rafael](name)
+    - oi
+    - olá
+    - bom dia
+    - boa tarde, meu nome é [daniel](name)
+    - boa noite
+    - eae
+- intent: afirmacao
+  examples: |
+    - sim
+    - s
+    - isso
+    - acho que sim
+- intent: negacao
+  examples: |
+    - não
+    - n
+    - nope
+    - acho que não
+- intent: pergunta
+  examples: |
+    - o que é [cdc]{"entity":"geral","value":"CDC"}?
+    - o que significa [CDC](geral)?

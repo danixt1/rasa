@@ -1,0 +1,24 @@
+version: "3.1"
+
+rules:
+- rule: responder saudacao
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+
+- rule: ação caso o bot não tenha entendido a pergunta
+  steps:
+  - intent: nlu_fallback
+  - action: utter_default
+
+- rule: cdc significado
+  steps:
+  - intent: pergunta
+    entities:
+    - geral: "CDC"
+  - action: utter_geral_cdc
+  
+- rule: texto de inicio chamado pelo frontend
+  steps:
+  - intent: initLoad
+  - action: utter_inicio

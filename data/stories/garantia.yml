@@ -1,0 +1,28 @@
+version: "3.1"
+
+stories:
+- story: garantia mensagem generica
+  steps:
+  - intent: topico
+    entities:
+    - direito: "garantia"
+  - action: utter_garantia_generico
+  
+- story: garantia vencida, mas produto com defeito de fábrica.
+  steps:
+  - intent: pergunta
+    entities:
+    - funciona: "nao_funciona"
+    - garantia: "expirada"
+  - action: utter_garantia_defeito_de_fabrica
+  - intent: afirmacao
+  - action: utter_garantia_expirada
+- story: garantia vencida, mas produto sem defeito de fábrica.
+  steps:
+  - intent: pergunta
+    entities:
+    - funciona: "nao_funciona"
+    - garantia: "expirada"
+  - action: utter_garantia_defeito_de_fabrica
+  - intent: negacao
+  - action: utter_garantia_nao_e_defeito_de_fabrica

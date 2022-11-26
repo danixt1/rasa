@@ -1,0 +1,8 @@
+version: "3.1"
+rules:
+- rule: perda da nota fiscal
+  steps:
+  - intent: pergunta
+    entities:
+    - notaFiscal
+  - action: utter_nota_fiscal

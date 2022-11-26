@@ -1,0 +1,40 @@
+version: "3.1"
+nlu:
+- lookup: direito
+  examples: |
+    - garantia
+- synonym: expirada
+  examples: |
+    - passou da garantia
+    - nao tem garantia
+    - não tem garantia
+    - eu nao tenho garantia
+    - sem garantia
+    - fora da garantia
+- synonym: nao_funciona
+  examples: |
+    - não funciona
+    - nao funciona
+    - esta com defeito
+    - não esta funcionado
+    - nao esta funcionado
+    - n ta funcionando
+    - ta quebrado
+    - ta com defeito
+    - falha
+- synonym: funciona
+  examples: |
+    - está funcionando
+    - liga
+- intent: pergunta
+  examples: | 
+    - tenho uma [tv](produto) [fora da garantia](garantia)
+    - o meu [computador](produto) [nao funciona](funciona) e [ja passou da garantia](garantia)
+    - o meu [computador](produto) [não está funcionado](funciona) e já [passou da garantia](garantia), ainda tenho algum direito?
+    - o meu [pc](produto) [ta quebrado](funciona) e [nao tem garantia](garantia), quais são os meus direitos
+    - depois de um tempo de uso o meu [pc](produto) começou a apresentar [falha](funciona), posso pedir o dinheiro de volta?
+- intent: topico
+  examples: |
+    - quais são os meus direitos referente a [garantia](direito)?
+    - direitos sobre a [garantia](direito).
+    - direitos quanto a [garantia de um produto]{"entity":"direito","value":"garantia"}

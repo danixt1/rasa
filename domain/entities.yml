@@ -1,0 +1,11 @@
+version: "3.1"
+
+entities: 
+- direito
+- produto
+- funciona
+- garantia
+- devolucao
+- notaFiscal
+  #perguntas gerais
+- geral

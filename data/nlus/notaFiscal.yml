@@ -1,0 +1,6 @@
+version: "3.1"
+nlu:
+- intent: pergunta
+  examples: | 
+    - perdi a [nota fiscal](notaFiscal), como conseguir uma nova?
+    - onde posso solicitar a [nota fiscal](notaFiscal)?
