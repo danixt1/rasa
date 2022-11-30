@@ -9,3 +9,5 @@ entities:
 - notaFiscal
   #perguntas gerais
 - geral
+#usado para passar perguntas diretas
+- direct

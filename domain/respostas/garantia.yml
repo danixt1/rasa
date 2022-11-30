@@ -23,7 +23,12 @@ responses:
     - title: "Eu não sei"
       payload: "/desconhece"
   utter_garantia_generico:
-  - text: O fornecedor deve responder por defeitos de fabricação mesmo fora do período de garantia.De acordo com o CDC, os fornecedores respondem pelos defeitos de qualidade que tornem produtos impróprios ao consumo ou diminuam seu valor.Quando se tratam de problemas aparentes, em serviços ou produtos não duráveis, o consumidor tem até 30 dias para fazer sua reclamação, enquanto que, no caso dos produtos duráveis, o prazo é de até 90 dias.Mas, com relação aos problemas “ocultos”, que podem levar anos para se manifestar, a lei esclarece que o consumidor tem direito à reparação da falha oculta até 5 anos do produto, começando a contagem do prazo a partir do momento em que o defeito de fabricação foi notado.
+  - text: "alguns tópicos referente a garantia:"
+    buttons: 
+    - title: "Tempo de garantia"
+      payload: '/pergunta{{"garantia":"tempo"}}'
+    - title: "Defeito após garantia"
+      payload: '/pergunta{{"direct":"defeitoPosGarantia"}}'
   utter_garantia_tempo_variado:
   - text: A garantia legal é estabelecida independente da previsão em contrato
   utter_garantia_tempo_duravel:
